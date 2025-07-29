@@ -27,10 +27,14 @@ class DoublyLinkedList:
         while temp:
             print(temp.data,end='<-->')
             temp=temp.prev
-            print("None")
+        print("None")
     def display(self):
         temp=self.head
         print("Doubly Li'nked List")
+        while temp:
+            print(temp.data,end="<-->")
+            temp=temp.next
+        print("None")
        
 dll=DoublyLinkedList()
 n=int(input("enter the number of elements to insert at end:"))
